@@ -21,7 +21,7 @@ var trueColorVis = {
   min: 0.0,
   max: 255.0,
 };
-
+Map.addLayer(data_no_ndvi,trueColorVis,'NAIP True')
 
 /// Calculate NDVIusing the near infrared and red bands
 var ndvi = data_no_ndvi.normalizedDifference(['N', 'R']).rename('NDVI');
